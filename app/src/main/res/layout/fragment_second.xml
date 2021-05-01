@@ -7,21 +7,289 @@
     tools:context=".SecondFragment">
 
     <TextView
-        android:id="@+id/textview_second"
+        android:id="@+id/concentrationLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button_second"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/concentration"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_second"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/previous"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical"
+        android:weightSum="4"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/cardback1"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback2"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback3"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback4"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback5"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/cardback6"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback7"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback8"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback9"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback10"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/cardback11"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback"/>
+
+            <ImageView
+                android:id="@+id/cardback12"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback13"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback14"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback15"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/cardback16"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback17"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback18"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback19"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+            <ImageView
+                android:id="@+id/cardback20"
+                android:layout_width="63dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/cardback" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="425dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/tryAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:text="@string/try_again" />
+
+        <Button
+            android:id="@+id/newGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:text="@string/new_game" />
+
+        <Button
+            android:id="@+id/endGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:text="@string/end_game" />
+
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:text="@string/return_to_menu" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

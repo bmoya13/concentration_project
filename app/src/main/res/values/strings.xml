@@ -13,4 +13,9 @@
     <string name="to_the_moon_studios_presents">To The Moon Studios Presents:</string>
     <string name="the_concentration_app">The Concentration App</string>
     <string name="todo">TODO</string>
+    <string name="try_again">Try Again</string>
+    <string name="new_game">New Game</string>
+    <string name="end_game">End Game</string>
+    <string name="return_to_menu">Return To Menu</string>
+    <string name="concentration">Concentration</string>
 </resources>
