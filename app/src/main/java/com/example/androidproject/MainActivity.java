@@ -27,6 +27,19 @@ MediaPlayer mySong;
         mySong.start();
 
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt("position", mySong.getCurrentPosition());
+        mySong.pause();
+        super.onSaveInstanceState(outState);
+    }
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState){
+        int pos = savedInstanceState.getInt("position");
+        mySong.seekTo(pos);
+        super.onRestoreInstanceState(savedInstanceState);
+    }
     public void musicButton(View v) {
         if (mySong.isPlaying()) {
             mySong.stop();
