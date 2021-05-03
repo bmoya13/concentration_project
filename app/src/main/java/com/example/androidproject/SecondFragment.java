@@ -41,7 +41,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.catcard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -59,7 +59,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.catcard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -77,7 +77,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.deercard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -95,7 +95,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.deercard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -113,7 +113,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.dodocard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -131,7 +131,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.dodocard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -149,7 +149,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.dogcard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -167,7 +167,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.dogcard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -185,7 +185,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.duckcard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -203,7 +203,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.duckcard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -221,7 +221,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.octopuscard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -239,7 +239,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.octopuscard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -257,7 +257,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.owlcard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -275,7 +275,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.owlcard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -293,7 +293,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.squirrelcard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -311,7 +311,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.squirrelcard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -329,7 +329,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.tanukicard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -347,7 +347,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.tanukicard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -365,7 +365,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.wolfcard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
@@ -383,7 +383,7 @@ public class SecondFragment extends Fragment {
             public void onClick(View view) {
                 if (!card1selected || !card2selected) {
                     ImageView card = (ImageView) view;
-                    card.setImageResource(R.drawable.blankcard);
+                    card.setImageResource(R.drawable.wolfcard);
                     if (!card1selected) {
                         selection1 = card;
                         card1selected = true;
