@@ -44,10 +44,10 @@ MediaPlayer mySong;
 
     // Music on/off button //
     public void musicButton(View v) {
-        if (mySong.isPlaying()) {       // If music is currently playing, stop it but initialize again.
+        if (mySong.isPlaying()) {       // If music is currently playing, stop it
             mySong.stop();
+        } else {                        // If music is not playing, reinitialize start playing.
             mySong = MediaPlayer.create(getBaseContext(), R.raw.animalcrossing);
-        } else {                        // If music is not playing, set looping and start playing.
             mySong.setLooping(true);
             mySong.start();
         }
