@@ -22,29 +22,32 @@ MediaPlayer mySong;
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        // Load up music to initially start playing. //
         mySong= MediaPlayer.create(getBaseContext(), R.raw.animalcrossing);
-        mySong.setLooping(true);
-        mySong.start();
+        mySong.setLooping(true);    // Music will restart when done.
+        mySong.start();             // Music starts playing.
 
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        outState.putInt("position", mySong.getCurrentPosition());
-        mySong.pause();
+        outState.putInt("position", mySong.getCurrentPosition()); // Save current timestamp music is at.
+        mySong.pause();                                           // Music pauses for now.
         super.onSaveInstanceState(outState);
     }
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState){
-        int pos = savedInstanceState.getInt("position");
-        mySong.seekTo(pos);
+        int pos = savedInstanceState.getInt("position");    // Receive timestamp from saved instance.
+        mySong.seekTo(pos);                                     // Music skips to the timestamp and starts playing.
         super.onRestoreInstanceState(savedInstanceState);
     }
+
+    // Music on/off button //
     public void musicButton(View v) {
-        if (mySong.isPlaying()) {
+        if (mySong.isPlaying()) {       // If music is currently playing, stop it but initialize again.
             mySong.stop();
             mySong = MediaPlayer.create(getBaseContext(), R.raw.animalcrossing);
-        } else {
+        } else {                        // If music is not playing, set looping and start playing.
             mySong.setLooping(true);
             mySong.start();
         }
