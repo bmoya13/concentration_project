@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#901E1E1E"
     tools:context=".SecondFragment">
 
     <TextView
@@ -45,8 +46,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback2"
@@ -54,8 +55,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback3"
@@ -63,8 +64,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback4"
@@ -72,8 +73,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback5"
@@ -81,8 +82,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
 
@@ -98,8 +99,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback7"
@@ -107,8 +108,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback8"
@@ -116,8 +117,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback9"
@@ -125,8 +126,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback10"
@@ -134,8 +135,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
 
@@ -151,8 +152,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback"/>
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback12"
@@ -160,8 +161,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback13"
@@ -169,8 +170,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback14"
@@ -178,8 +179,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback15"
@@ -187,8 +188,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
 
@@ -204,8 +205,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback17"
@@ -213,8 +214,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback18"
@@ -222,8 +223,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback19"
@@ -231,8 +232,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/cardback20"
@@ -240,8 +241,8 @@
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/cardback" />
+                android:src="@drawable/cardback"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
 
@@ -264,7 +265,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:scaleType="centerInside"
-            android:text="@string/try_again" />
+            android:text="@string/try_again"
+            app:backgroundTint="@color/black" />
 
         <Button
             android:id="@+id/newGameButton"
@@ -272,7 +274,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:scaleType="centerInside"
-            android:text="@string/new_game" />
+            android:text="@string/new_game"
+            app:backgroundTint="@color/black" />
 
         <Button
             android:id="@+id/endGameButton"
@@ -280,7 +283,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:scaleType="centerInside"
-            android:text="@string/end_game" />
+            android:text="@string/end_game"
+            app:backgroundTint="@color/black" />
 
         <Button
             android:id="@+id/returnButton"
@@ -288,7 +292,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:scaleType="centerInside"
-            android:text="@string/return_to_menu" />
+            android:text="@string/return_to_menu"
+            app:backgroundTint="@color/black" />
 
     </LinearLayout>
 

@@ -1,5 +1,6 @@
 package com.example.androidproject;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -14,15 +15,26 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
-
+MediaPlayer mySong;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        mySong= MediaPlayer.create(getBaseContext(), R.raw.animalcrossing);
+        mySong.setLooping(true);
+        mySong.start();
 
-
+    }
+    public void musicButton(View v) {
+        if (mySong.isPlaying()) {
+            mySong.stop();
+            mySong = MediaPlayer.create(getBaseContext(), R.raw.animalcrossing);
+        } else {
+            mySong.setLooping(true);
+            mySong.start();
+        }
     }
 
     @Override
