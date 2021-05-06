@@ -18,4 +18,15 @@
     <string name="end_game">End Game</string>
     <string name="return_to_menu">Return To Menu</string>
     <string name="concentration">Concentration</string>
+    <string name="play">Play</string>
+    <string name="how_many_cards_this_game">How many cards this game?</string>
+    <string name="please_enter_an_even_number_4_20">Please enter an even number, 4-20</string>
+    <string name="how_many_cards">How many cards?</string>
+    <string name="start">Start</string>
+    <string name="highscores">Highscores</string>
+    <string name="even_number_4_20">Even number, 4-20</string>
+    <string name="credits">Credits</string>
+    <string name="brandon_moya_014186939">Brandon Moya, 014186939</string>
+    <string name="menu">menu</string>
+    <string name="back">Back</string>
 </resources>
