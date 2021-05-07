@@ -49,7 +49,7 @@ public class UserInputFragment extends Fragment {
         if (!"".equals(temp)) {
             MainActivity.userCardInput = Integer.parseInt(temp);                                              // numberCards now stores the user inputted number.
         }
-        if (MainActivity.userCardInput == 20) {                                                               // if numberCards is 20, take user to game with 20 cards.
+        if (MainActivity.userCardInput >= 4 && MainActivity.userCardInput <= 20 && (MainActivity.userCardInput % 2) == 0) {
             NavHostFragment.findNavController(UserInputFragment.this)
                     .navigate(R.id.action_userInputFragment_to_SecondFragment);
         }
