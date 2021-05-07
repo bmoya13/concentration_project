@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment;
 
 public class UserInputFragment extends Fragment {
     EditText userInput;         // used to read in editTextNumber.
-    int numberCards;            // used to store number of cards user wants.
 
     @Override
     public View onCreateView(
@@ -48,9 +47,9 @@ public class UserInputFragment extends Fragment {
     public void CheckUserInput() {
         String temp = userInput.getText().toString();                                          // get userInput as a string.
         if (!"".equals(temp)) {
-            numberCards = Integer.parseInt(temp);                                              // numberCards now stores the user inputted number.
+            MainActivity.userCardInput = Integer.parseInt(temp);                                              // numberCards now stores the user inputted number.
         }
-        if (numberCards == 20) {                                                               // if numberCards is 20, take user to game with 20 cards.
+        if (MainActivity.userCardInput == 20) {                                                               // if numberCards is 20, take user to game with 20 cards.
             NavHostFragment.findNavController(UserInputFragment.this)
                     .navigate(R.id.action_userInputFragment_to_SecondFragment);
         }

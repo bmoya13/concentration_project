@@ -16,6 +16,8 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 MediaPlayer mySong;
+boolean wantMusic = true;                      // boolean to keep track of if user wants music or not.
+public static int userCardInput;        // public static variable used to keep track of the desired number of cards from user.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,29 +29,40 @@ MediaPlayer mySong;
         mySong.setLooping(true);    // Music will restart when done.
         mySong.start();             // Music starts playing.
 
+
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putInt("position", mySong.getCurrentPosition()); // Save current timestamp music is at.
         mySong.pause();                                           // Music pauses for now.
+        outState.putBoolean("wantMusic", wantMusic);
         super.onSaveInstanceState(outState);
     }
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState){
         int pos = savedInstanceState.getInt("position");    // Receive timestamp from saved instance.
         mySong.seekTo(pos);                                     // Music skips to the timestamp and starts playing.
+        boolean musicCheck = savedInstanceState.getBoolean("wantMusic");
+        if (!musicCheck) {
+            mySong.stop();
+            wantMusic = false;
+        }
         super.onRestoreInstanceState(savedInstanceState);
     }
+
 
     // Music on/off button //
     public void musicButton(View v) {
         if (mySong.isPlaying()) {       // If music is currently playing, stop it
             mySong.stop();
+            wantMusic = false;
+
         } else {                        // If music is not playing, reinitialize start playing.
             mySong = MediaPlayer.create(getBaseContext(), R.raw.animalcrossing);
             mySong.setLooping(true);
             mySong.start();
+            wantMusic = true;
         }
     }
 

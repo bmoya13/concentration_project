@@ -61,6 +61,7 @@ public class SecondFragment extends Fragment {
         view.findViewById(R.id.returnButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                MainActivity.userCardInput = 0;
                 NavHostFragment.findNavController(SecondFragment.this)
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
