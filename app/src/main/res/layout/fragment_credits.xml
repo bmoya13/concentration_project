@@ -7,6 +7,23 @@
     android:background="#901E1E1E">
 
     <TextView
+        android:id="@+id/justinCredit"
+        android:layout_width="251dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginBottom="388dp"
+        android:gravity="center"
+        android:text="Justin Ho, 014574794"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
         android:id="@+id/davidCredit"
         android:layout_width="251dp"
         android:layout_height="58dp"

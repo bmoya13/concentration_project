@@ -30,6 +30,9 @@
         <action
             android:id="@+id/action_SecondFragment_to_postGameFragment"
             app:destination="@id/postGameFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_self"
+            app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
         android:id="@+id/userInputFragment"

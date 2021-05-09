@@ -22,11 +22,17 @@ public class PostGameFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-//        TextView scoreTextView;
-//        scoreTextView = view.findViewById(R.id.scoreTextView);
-//        scoreTextView.setText(String.valueOf(score));
+        TextView scoreTextView;
+        scoreTextView = view.findViewById(R.id.scoreTextView);
+        scoreTextView.setText(String.valueOf(score));
 
-        TextView tv = (TextView) view.findViewById(R.id.scoreTextView);
-        tv.setText("" + score);
+        view.findViewById(R.id.endButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.userCardInput = 0;
+                NavHostFragment.findNavController(PostGameFragment.this)
+                        .navigate(R.id.action_postGameFragment_to_FirstFragment);
+            }
+        });
     }
 }
