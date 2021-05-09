@@ -31,4 +31,9 @@
     <string name="back">Back</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="justin_ho_014574794">Justin Ho, 014574794</string>
+    <string name="david_tran_011813529">David Tran, 011813529</string>
+    <string name="score">Score</string>
+    <string name="end">End</string>
+    <string name="ishan_dhaliwal_01330497">Ishan Dhaliwal, 01330497</string>
 </resources>

@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#901E1E1E">
 
     <TextView
         android:id="@+id/scoreTextView"
@@ -16,6 +17,7 @@
         android:layout_marginRight="150dp"
         android:gravity="center"
         android:text="TextView"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +32,8 @@
         android:layout_marginEnd="162dp"
         android:layout_marginRight="162dp"
         android:layout_marginBottom="47dp"
-        android:text="End"
+        android:text="@string/end"
+        app:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -45,10 +48,11 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="159dp"
         android:layout_marginRight="159dp"
-        android:text="Score"
+        android:gravity="center"
+        android:text="@string/score"
+        android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold"
-        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
