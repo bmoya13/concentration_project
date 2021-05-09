@@ -41,7 +41,6 @@ public class UserInputFragment extends Fragment {
                 CheckUserInput();                                                               // if start button is clicked, check the user input.
             }
         });
-
     }
 
     public void CheckUserInput() {

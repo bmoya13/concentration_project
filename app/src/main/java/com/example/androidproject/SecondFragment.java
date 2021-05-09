@@ -19,6 +19,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class SecondFragment extends Fragment {
     int numCards;
     int numCorrect;
+    int score;
     ImageView selection1, selection2;
     boolean card1selected, card2selected;
     int[] arrayCardRandom;
@@ -69,6 +70,16 @@ public class SecondFragment extends Fragment {
                 MainActivity.userCardInput = 0;
                 NavHostFragment.findNavController(SecondFragment.this)
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
+            }
+        });
+
+        view.findViewById(R.id.endGameButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View view) {
+                MainActivity.score = score;
+                NavHostFragment.findNavController(SecondFragment.this)
+                        .navigate(R.id.action_SecondFragment_to_postGameFragment);
             }
         });
 
@@ -511,9 +522,14 @@ public class SecondFragment extends Fragment {
             card1selected = false;
             card2selected = false;
             numCorrect += 2;
-            if (numCorrect == numCards)
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
+            score += 2;
+//            if (numCorrect == numCards)
+//                NavHostFragment.findNavController(SecondFragment.this)
+//                        .navigate(R.id.action_SecondFragment_to_postGameFragment);
+        }
+        else {
+            if(score > 0)
+                score--;
         }
     }
 
@@ -536,6 +552,7 @@ public class SecondFragment extends Fragment {
         card2selected = false;
         numCorrect = 0;
         numCards = MainActivity.userCardInput;
+        score = MainActivity.score;
         arrayCardRandom = new int[numCards];
         images = new Integer[numCards];
         int imagesIndex = 0;

@@ -27,6 +27,9 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_postGameFragment"
+            app:destination="@id/postGameFragment" />
     </fragment>
     <fragment
         android:id="@+id/userInputFragment"
@@ -45,6 +48,14 @@
         android:label="CreditsFragment" >
         <action
             android:id="@+id/action_creditsFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postGameFragment"
+        android:name="com.example.androidproject.PostGameFragment"
+        android:label="PostGameFragment" >
+        <action
+            android:id="@+id/action_postGameFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>

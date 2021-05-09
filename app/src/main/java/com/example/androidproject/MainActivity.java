@@ -15,9 +15,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
-MediaPlayer mySong;
-boolean wantMusic = true;                      // boolean to keep track of if user wants music or not.
-public static int userCardInput;        // public static variable used to keep track of the desired number of cards from user.
+    MediaPlayer mySong;
+    boolean wantMusic = true;                      // boolean to keep track of if user wants music or not.
+    public static int userCardInput;        // public static variable used to keep track of the desired number of cards from user.
+    public static int score;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
