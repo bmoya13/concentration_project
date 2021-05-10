@@ -44,6 +44,9 @@
         <action
             android:id="@+id/action_userInputFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_userInputFragment_to_highScoresFragment"
+            app:destination="@id/highScoresFragment" />
     </fragment>
     <fragment
         android:id="@+id/creditsFragment"
@@ -60,5 +63,14 @@
         <action
             android:id="@+id/action_postGameFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/highScoresFragment"
+        android:name="com.example.androidproject.HighScoresFragment"
+        android:label="fragment_high_scores"
+        tools:layout="@layout/fragment_high_scores" >
+        <action
+            android:id="@+id/action_highScoresFragment_to_userInputFragment"
+            app:destination="@id/userInputFragment" />
     </fragment>
 </navigation>

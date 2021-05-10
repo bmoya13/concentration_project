@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     boolean wantMusic = true;                      // boolean to keep track of if user wants music or not.
     public static int userCardInput;        // public static variable used to keep track of the desired number of cards from user.
     public static int score;
+    public static int highscores[] = new int[27];
+    public static String highscorers[] = new String[27];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

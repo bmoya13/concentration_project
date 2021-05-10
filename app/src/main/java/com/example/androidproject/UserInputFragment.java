@@ -25,7 +25,7 @@ public class UserInputFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        userInput = view.findViewById(R.id.editTextNumber);             // initialize userInput to editTextNumber.
+        userInput = view.findViewById(R.id.editTextName);             // initialize userInput to editTextNumber.
 
         view.findViewById(R.id.backButton).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,20 +38,31 @@ public class UserInputFragment extends Fragment {
         view.findViewById(R.id.startButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CheckUserInput();                                                               // if start button is clicked, check the user input.
+                if (CheckUserInput())        // if start button is clicked, check the user input.
+                    NavHostFragment.findNavController(UserInputFragment.this)
+                            .navigate(R.id.action_userInputFragment_to_SecondFragment);
+            }
+        });
+
+        view.findViewById(R.id.highScoreButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (CheckUserInput())                                                               // if start button is clicked, check the user input.
+                    NavHostFragment.findNavController(UserInputFragment.this)
+                            .navigate(R.id.action_userInputFragment_to_highScoresFragment);
             }
         });
     }
 
-    public void CheckUserInput() {
+    public boolean CheckUserInput() {
         String temp = userInput.getText().toString();                                          // get userInput as a string.
         if (!"".equals(temp)) {
             MainActivity.userCardInput = Integer.parseInt(temp);                                              // numberCards now stores the user inputted number.
         }
-        if (MainActivity.userCardInput >= 4 && MainActivity.userCardInput <= 20 && (MainActivity.userCardInput % 2) == 0) {
-            NavHostFragment.findNavController(UserInputFragment.this)
-                    .navigate(R.id.action_userInputFragment_to_SecondFragment);
-        }
+        if (MainActivity.userCardInput >= 4 && MainActivity.userCardInput <= 20 && (MainActivity.userCardInput % 2) == 0)
+            return true;
+        else
+            return false;
     }
 
 
