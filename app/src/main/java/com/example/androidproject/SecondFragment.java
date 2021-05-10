@@ -581,9 +581,12 @@ public class SecondFragment extends Fragment {
             card2selected = false;
             numCorrect += 2;
             score += 2;
-//            if (numCorrect == numCards)
-//                NavHostFragment.findNavController(SecondFragment.this)
-//                        .navigate(R.id.action_SecondFragment_to_postGameFragment);
+            if (numCorrect == numCards)
+            {
+                MainActivity.score = score;
+                NavHostFragment.findNavController(SecondFragment.this)
+                        .navigate(R.id.action_SecondFragment_to_postGameFragment);
+            }
         }
         else {
             if(score > 0)
