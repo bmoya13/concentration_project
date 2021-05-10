@@ -61,7 +61,8 @@ public class HighScoresFragment extends Fragment {
         int arrayIndex = 0;
         names = new String[3];
         scores = new int[3];
-        InputStream in = context.getAssets().open("highscores.txt");
+        //InputStream in = context.getAssets().open("highscores.txt");
+        InputStream in = context.openFileInput("highscores.txt");
         Scanner scan = new Scanner(in);
         for (int i = 0; i < 27; i++)
         {

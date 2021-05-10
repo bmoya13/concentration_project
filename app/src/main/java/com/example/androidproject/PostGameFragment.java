@@ -1,5 +1,6 @@
 package com.example.androidproject;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,8 @@ import androidx.fragment.app.Fragment;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStreamWriter;
 import java.util.Scanner;
 
 public class PostGameFragment extends Fragment {
@@ -60,6 +63,7 @@ public class PostGameFragment extends Fragment {
             public void onClick(View view) {
                 if (checkInput()) {
                     try {
+                        userNameInput = userNameInputField.getText().toString();
                         addScore();
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -71,12 +75,13 @@ public class PostGameFragment extends Fragment {
         });
     }
 
-    public void scanFile()
-    {
-        scan = new Scanner("raw/highscores.txt");
+    public void scanFile(Context context) throws IOException {
+        //InputStream in = context.getAssets().open("highscores.txt");
+        InputStream in = context.openFileInput("highscores.txt");
+        Scanner scan = new Scanner(in);
         for (int i = 0; i < 27; i++)
         {
-            scan.next();
+            MainActivity.highscorers[i] = scan.next();
             MainActivity.highscores[i] = scan.nextInt();
         }
         scan.close();
@@ -117,7 +122,7 @@ public class PostGameFragment extends Fragment {
     }
 
     public void addScore() throws IOException {
-        FileWriter outfile = new FileWriter("raw/highscores.txt");
+        OutputStreamWriter outfile = new OutputStreamWriter(getContext().openFileOutput("highscores.txt", Context.MODE_PRIVATE));
         if (numCards == 4)
         {
             if (score >= MainActivity.highscores[0])
