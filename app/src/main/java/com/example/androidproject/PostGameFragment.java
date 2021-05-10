@@ -66,6 +66,7 @@ public class PostGameFragment extends Fragment {
                     }
                 }
                 savedLabel.setVisibility(View.VISIBLE);
+                view.findViewById(R.id.saveButton).setVisibility(View.INVISIBLE);
             }
         });
     }

@@ -1,5 +1,6 @@
 package com.example.androidproject;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -28,27 +29,26 @@ public class HighScoresFragment extends Fragment {
             Bundle savedInstanceState
     ) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_userinput, container, false);
+        View view = inflater.inflate(R.layout.fragment_high_scores, container, false);
+        try {
+            loadScores(getActivity());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        highscore1 = (TextView) view.findViewById(R.id.highScore1);
+        highscore2 = (TextView) view.findViewById(R.id.highScore2);
+        highscore3 = (TextView) view.findViewById(R.id.highScore3);
+        highscore1.setText(names[0] + ", " + scores[0]);
+        highscore2.setText(names[1] + ", " + scores[1]);
+        highscore3.setText(names[2] + ", " + scores[2]);
+
+        return view;
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        highscore1 = view.findViewById(R.id.highScore1);
-        highscore2 = view.findViewById(R.id.highScore2);
-        highscore3 = view.findViewById(R.id.highScore3);
-
-        try {
-            loadScores();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        highscore1.setText(names[0] + ", " + scores[0]);
-        highscore1.setText(names[1] + ", " + scores[1]);
-        highscore1.setText(names[2] + ", " + scores[2]);
-
-        view.findViewById(R.id.backButton).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.scoresBackButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(HighScoresFragment.this)
@@ -57,10 +57,12 @@ public class HighScoresFragment extends Fragment {
         });
     }
 
-    public void loadScores() throws IOException {
+    public void loadScores(Context context) throws IOException {
         int arrayIndex = 0;
-        InputStream input = (getResources().openRawResource(R.raw.highscores));
-        Scanner scan = new Scanner(input);
+        names = new String[3];
+        scores = new int[3];
+        InputStream in = context.getAssets().open("highscores.txt");
+        Scanner scan = new Scanner(in);
         for (int i = 0; i < 27; i++)
         {
             MainActivity.highscorers[i] = scan.next();
