@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HighScoresFragment" >
+    android:background="#901E1E1E"
+    tools:context=".HighScoresFragment">
 
     <TextView
         android:id="@+id/highscoresLabel"
@@ -16,7 +17,8 @@
         android:layout_marginEnd="159dp"
         android:layout_marginRight="159dp"
         android:gravity="center"
-        android:text="High Scores"
+        android:text="@string/high_scores"
+        android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,6 +35,8 @@
         android:layout_marginEnd="177dp"
         android:layout_marginRight="177dp"
         android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/highscoresLabel" />
@@ -47,6 +51,8 @@
         android:layout_marginEnd="177dp"
         android:layout_marginRight="177dp"
         android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/highScore1" />
@@ -61,6 +67,8 @@
         android:layout_marginEnd="177dp"
         android:layout_marginRight="177dp"
         android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/highScore2" />
@@ -74,7 +82,8 @@
         android:layout_marginEnd="162dp"
         android:layout_marginRight="162dp"
         android:layout_marginBottom="100dp"
-        android:text="Back"
+        android:text="@string/back"
+        app:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
